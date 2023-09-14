@@ -3,9 +3,13 @@ body {
 }
 
 canvas {
-  background-color: rgb(167, 9, 241);
+  background-image:url("https://as2.ftcdn.net/v2/jpg/05/39/42/75/1000_F_539427512_TD2PZq9mCBH2Qe9Mt2UlrNPt0ZomJLxY.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
 }
 
 img {
   display: none;
+  
 }
