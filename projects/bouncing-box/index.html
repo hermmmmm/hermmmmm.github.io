@@ -6,7 +6,7 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
+			width: 100px;
 			height: 70px;
 			background-color: teal;
 			font-size: 300%;
@@ -45,6 +45,9 @@
 			setInterval(update, 50);
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
+			function handleBoxClick(){
+				positionX=8;
+			}
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
@@ -70,7 +73,8 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
+			function update(00) {
+				
 				
 
 			};
