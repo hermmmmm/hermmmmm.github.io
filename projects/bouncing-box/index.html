@@ -53,8 +53,8 @@
 			} 
 
 			// changes the text displayed on the Box
-			function changeBoxText(green) {
-				box.text(newText);
+			function changeBoxText() {
+				box.text(1);
 			}
 
 			//////////////////////////////////////////////////////////////////
@@ -63,6 +63,7 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
+			var points = 0;
 
 			
 			/* 
@@ -74,6 +75,7 @@
 				/* Your Code to Increase positionX by 10 here*/
 				positionX = positionX + 10;
 				moveBoxTo(positionX)
+				var speed = 10;
 			};
 
 			/* 
@@ -83,9 +85,9 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-				changeBoxText(1);
+				changeBoxText(points);
 				
-
+               
 
 			};
 		})();
