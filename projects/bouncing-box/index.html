@@ -6,7 +6,7 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 100px;
+			width: 70px;
 			height: 70px;
 			background-color: teal;
 			font-size: 300%;
@@ -45,18 +45,15 @@
 			setInterval(update, 50);
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
-			function handleBoxClick(){
-				positionX=8;
-			}
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
-				box.css("left", newPositionX);
-			}
+			function moveBoxTo(positionX) {
+				box.css("left", 100);
+			} 
 
 			// changes the text displayed on the Box
-			function changeBoxText(newText) {
+			function changeBoxText(green) {
 				box.text(newText);
 			}
 
@@ -65,7 +62,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var myVariable =0;
 
 			
 			/* 
@@ -73,10 +70,10 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update(00) {
-				
-				
-
+			function update(1) {
+				/* Your Code to Increase positionX by 10 here*/
+				myVariable = myVariable + 10;
+				moveBoxTo(positionX)
 			};
 
 			/* 
@@ -85,6 +82,8 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				positionX = 0;
+				changeBoxText(1);
 				
 
 
