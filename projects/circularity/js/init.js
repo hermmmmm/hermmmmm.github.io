@@ -33,11 +33,12 @@ var init = function (window) {
             circles.push(circle);
         }
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle(4);
-        drawCircle(8);
-        drawCircle(9);
-        drawCircle(1);
-        drawCircle(6552);
+        drawCircle()
+        drawCircle()
+        drawCircle()
+        drawCircle()
+        drawCircle()
+}
         
         
 
@@ -61,11 +62,11 @@ var init = function (window) {
              
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition()
-            game.checkCirclePosition()
-            game.checkCirclePosition()
-            game.checkCirclePosition()
-            game.checkCirclePosition()
+            game.checkCirclePosition(circles[0])
+            game.checkCirclePosition(circles[1])
+            game.checkCirclePosition(circles[2])
+            game.checkCirclePosition(circles[3])
+            game.checkCirclePosition(circles[4])
 
             // TODO 9 : Iterate over the array
 
@@ -104,7 +105,7 @@ var init = function (window) {
         game.update = update;
 
         app.addUpdateable(window.opspark.game);
-    }
+        }
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
